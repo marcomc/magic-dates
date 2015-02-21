@@ -3,7 +3,7 @@
 Plugin Name: Magic Dates
 Plugin URI: http://theportraitofageek.com
 Description: A simple shortcode that lets you create auto increased dates in your content.
-Version: 1.0
+Version: 1.1
 Author: Gerasimos Tsiamalos
 Author URI: http://theportraitofageek.com/
 */

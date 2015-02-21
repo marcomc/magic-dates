@@ -2,8 +2,8 @@
 Contributors: tsiger
 Tags: dates, increase
 Requires at least: 3.0
-Tested up to: 3.8
-Stable tag: 1.0
+Tested up to: 4.1
+Stable tag: 1.1
 
 Auto increased dates through the power of shortcodes and Magic Dates plugin!
 
@@ -30,15 +30,25 @@ If you want an ordinal number (1st, 2nd, 3rd etc) use it like this:
 
 Easy eh?
 
+=== Dates Interval Calculation ===
+use the [magicdays]YYYY-mm-dd[/magicdays] shortcode to calcumate the number
+of days between today and the given date
+
 == Installation ==
 
 To install Magic Dates:
 
 1. Upload the 'magic_dates.php' file into the '/wp-content/plugins/' directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Use the shortcode [magicdate][/magicdate] in the editor
+3. Use the shortcode [magicdate][/magicdate] in the editor to calculate the
+interval in years
+3. Use the shortcode [magicdays][/magicdays] in the editor to calculate the
+interval in days
 
 == Changelog ==
+
+= 1.1 =
+Add days interval calculations between today and a given date
 
 = 1.0 =
 Initial release
