@@ -8,6 +8,15 @@ Author: Gerasimos Tsiamalos
 Author URI: http://theportraitofageek.com/
 */
 
+function tpoag_magic_days( $atts, $content = null ) {
+
+        $starting_day = date_create($content);
+        $current_day = date_create(date('Y-m-d'));
+        $interval = date_diff($starting_day, $current_day);
+           
+        return $interval->format('%a');
+                
+}
 function tpoag_magic_date( $atts, $content = null ) {
 	extract( shortcode_atts( array('ordinalize' => 'false' ), $atts ) );
 	$current_year = date('Y');
@@ -25,6 +34,7 @@ function tpoag_ordinalizer($ordnum) {
 	return $ordinalsuffixes[0] ;
 } 
 
-add_shortcode( 'magicdate', 'tpoag_magic_date' );
+add_shortcode( 'magicdate','tpoag_magic_date' );
+add_shortcode( 'magicdays','tpoag_magic_days' );
 
 ?>
